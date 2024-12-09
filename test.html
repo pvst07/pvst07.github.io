@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    
+    <div id="container"> </div>
+    <button id="myBotton">click here</button>
+
+
+    <script>
+
+
+
+        const arr1 = ["Pavarisa", "Treewichayapong"]
+        const arr2 = ["shabu", "ice-cream"]
+        const arr3 = ["reading manga", "listening to music", "watching Anime", "playing basketball"]
+        const arr4 = ["PE", "Math"];
+
+        const con = document.getElementById("container")
+
+        const ul1 = document.createElement("ol")
+        const ul2 = document.createElement("ol")
+        const ul3 = document.createElement("ol")
+        const ul4 = document.createElement("ol")
+
+        const myButton = document.getElementById("myBotton");
+        let state = true;
+
+
+        myButton.addEventListener("click", function () {
+
+            if (state == true) {
+                state = false;
+                // const bt = document.createElement("button");
+                // bt.innerText = "clickhere";
+                // con.appendChild(bt)
+                // state=false;
+            }
+            else {
+
+                for (const items of arr1) {
+
+                    const li = document.createElement("li")
+                    li.innerText = items;
+                    ul1.appendChild(li);
+
+                }
+                for (const items of arr2) {
+
+                    const li = document.createElement("li")
+                    li.innerText = items;
+                    ul2.appendChild(li);
+
+                }
+                for (const items of arr3) {
+
+                    const li = document.createElement("li")
+                    li.innerText = items;
+                    ul3.appendChild(li);
+
+                }
+                for (const items of arr4) {
+
+                    const li = document.createElement("li")
+                    li.innerText = items;
+                    ul4.appendChild(li);
+
+                }
+
+            }
+
+            con.appendChild(ul1);
+            con.appendChild(ul2);
+            con.appendChild(ul3);
+            con.appendChild(ul4);
+
+            state = false;
+
+
+
+        })
+
+
+
+    </script>
+
+
+</body>
+
+</html>

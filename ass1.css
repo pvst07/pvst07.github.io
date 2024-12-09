@@ -1,0 +1,17 @@
+#head{
+    text-align: center;
+    border-style: solid;
+    background-color: #c6e2e9;
+    border: 80px;
+    padding: 20px;
+}
+.pic{
+    display: flex;
+    justify-content: center;
+}
+.line{
+    border-style: solid;
+    border-color: #c6e2e9;
+
+    
+}

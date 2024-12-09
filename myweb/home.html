@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hom.css">
+</head>
+
+<body>
+    <div id="welcome-container">
+        <h1 id="welcome-text">Welcome</h1>
+    </div>
+
+    <script src="script.js"></script>
+    <style>
+        .clickable-image {
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .clickable-image:hover {
+            transform: scale(1.1);
+        }
+    </style>
+
+
+
+
+
+
+
+
+    <div>
+        <div class="ct">
+            <div>
+                <p>Who you want to know</p>
+            </div>
+
+            <div class="container">
+                <a href="index.html" target="_blank">
+                    <img src="/S__15278082.jpg" alt="Clickable Image" class="clickable-image" id="cl">
+                </a>
+
+                <a href="https://www.facebook.com/share/15DtBMBPCw/?mibextid=LQQJ4d" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/800px-Facebook_logo_%28square%29.png"
+                        alt="Clickable Image" width="100" class="clickable-image" id="cl">
+                </a>
+
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+    <script>
+
+        window.onload = function () {
+            // Wait for the full animation duration before hiding the welcome text
+            setTimeout(function () {
+                document.getElementById('welcome-container').style.display = 'none';
+            }, 5000); // 5 seconds: 3 seconds for typing + 1 second hold + 1 second fade out
+        };
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
